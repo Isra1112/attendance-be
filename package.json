@@ -1,0 +1,42 @@
+{
+  "name": "attendance_management",
+  "version": "1.0.0",
+  "description": "attendance management backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "sonar": "node config/sonar-project.js -X",
+    "dev": "nodemon index",
+    "coverage": "jest --coverage",
+    "migrate": "node config/dbMigration.js"
+  },
+  "author": "i",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "bunyan": "^1.8.12",
+    "cors": "^2.8.5",
+    "dateformat": "^3.0.3",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "html-pdf": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.19.0",
+    "socket.io": "^2.3.0",
+    "sqlite3": "^5.0.3",
+    "swagger-ui-express": "^4.1.4",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "nodemon": "^2.0.2",
+    "sonarqube-scanner": "^2.6.0",
+    "supertest": "^4.0.2"
+  }
+}
